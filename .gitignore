@@ -4,7 +4,7 @@
 !**/ini_*.py
 
 !**/__other
-
+!P5/trees/tree_nodes.py
 # Ignore all compiled Python files in all directories
 **/*.pyc
 **/*:Zone.Identifier
