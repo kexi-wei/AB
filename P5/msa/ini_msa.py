@@ -4,7 +4,7 @@ from fasta2dict import fasta2dict
 from align_profiles_names import align_profiles
 
 
-def node2splits_align(i_node, nodes, seqs, gep):
+def node2splits_align(i_node, nodes, gap):  #  this line requires a change
     """
         Aligns the profiles of the two subtrees of the node i_node, and returns
       the list of names of the sequences in the subtree rooted at i_node.
@@ -17,14 +17,9 @@ def node2splits_align(i_node, nodes, seqs, gep):
     ['hmgb_chite', 'hmgl_wheat']
     """
 
-    if not nodes[i_node].left:
-        # base case
-        return [nodes[i_node].name]
-    # recursion
-    left_list = node2splits(nodes[i_node].left, nodes)
-    right_list = node2splits(nodes[i_node].right, nodes)
-    print(left_list, right_list)  # replace this line
-    return left_list + right_list
+    # copy the body of node2splits() function
+
+    # Modify 2 lines
 
 
 if __name__ == "__main__":
