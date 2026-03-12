@@ -5,6 +5,7 @@
 
 !**/__other
 !P5/trees/tree_nodes.py
+!P5/trees/drawtree.py
 # Ignore all compiled Python files in all directories
 **/*.pyc
 **/*:Zone.Identifier
